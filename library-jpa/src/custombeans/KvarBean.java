@@ -19,7 +19,7 @@ public class KvarBean {
 	public void setBrSobe(int brSobe) {
 		this.brSobe = brSobe;
 	}
-	
+	public void ispis(){}
 	
 	
 	
