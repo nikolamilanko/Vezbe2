@@ -1,0 +1,20 @@
+Napraviti Java GUI aplikaciju koja prikazuje lavirint dimenzija 6x6 celija.
+Na polju (0, 0) se inicijalno nalazi coveculjak koji seta kroz lavirint
+(ikonica "walker.png"), a polje (5, 5) je ciljno polje i sadrzi ikonicu "finish.png".
+
+Zidovi u lavirintu se simuliraju postavljanjem ivica na celije koje cine lavirint.
+Ove ivice su definisane u fajlu "borders.txt" na sledeci nacin : 
+u svakoj liniji se nalaze <red>, <kolona>, <vrsta ivice> za svaku celiju u
+lavirintu. Linije su sortirane prvo po redu, pa potom po koloni. Vrsta ivice
+moze biti "bottom" za donju ivicu, "left" za levu ili "both" ukoliko celija
+sadrzi i levu i donju ivicu. Ivice se mogu postaviti pomocu metoda 
+
+setBorder(BorderFactory.createMatteBorder(int top, int left, int bottom, int right, Color color))
+*pogledati Java API za detaljnije objasnjenje ovog metoda
+
+
+Coveculjak treba da nadje put kroz lavirint do cilja, a njime se upravlja pomocu
+strelica na tastaturi. Sva posecena polja se boje u proizvoljnu boju. Kada se stigne
+do cilja, prikazuje se dijalog sa porukom koliko je coveculjak napravio koraka do cilja, 
+kao i sa pitanjem da li igrac zeli da pocne igru ispocetka. U dnu prozora nalazi se i
+dugme "Pocni ispocetka" kojim se igra resetuje.
